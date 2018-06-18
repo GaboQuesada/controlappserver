@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="general.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="#">
-                <img src="bird.jpg" alt="Logo" style="width:40px;">
-            </a>
-            <form class="form-inline" >
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-            </form>
-        </nav>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="frontend/css/navbar.css">
+        <link rel="stylesheet" href="frontend/css/general.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="frontend/css/sigin.css" rel="stylesheet">
+    </head>
+
+    <body class="text-center">
+        <form class="form-signin">
+            <img class="mb-4" src="frontend/img/logo.png" alt="" width="120" height="120">
+            <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+            <label for="inputEmail" class="sr-only">Usuario</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+            <label for="inputPassword" class="sr-only">Contraseña</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+            <div class="checkbox mb-3">
+                <label>
+                   
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+          
+            <p class="mt-5 mb-3 text-muted">Panel de control</p>
+           
+        </form>
     </body>
 </html>
