@@ -5,20 +5,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="frontend/css/navbar.css">
-        <link rel="stylesheet" href="frontend/css/general.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="lib/animation/css/animation.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="lib/animation/js/animation.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
         <!-- Custom styles for this template -->
-        <link href="frontend/css/sigin.css" rel="stylesheet">
+        <link href="css/sigin.css" rel="stylesheet">
     </head>
 
     <body class="text-center">
         <form class="form-signin">
-            <img class="mb-4" src="frontend/img/logo.png" alt="" width="120" height="120">
+            <img class="mb-4 pulse" src="img/logo.png" alt="" width="120" height="120">
             <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
             <label for="inputEmail" class="sr-only">Usuario</label>
             <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
