@@ -40,8 +40,8 @@
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link anav "  href="lobby.php"><i class="fas fa-home"></i> Perfiles </a>
                     <a class="nav-item nav-link anav" href="master.php"><i class="fas fa-user"></i> Usuarios</a>
-                    <a class="nav-item nav-link anav" href="#"><i class="fas fa-industry"></i> Distribuidores</a>
-                    <a class="nav-item nav-link anav" href="#"><i class="fas fa-address-card"></i> Agentes</a>
+                    <a class="nav-item nav-link anav" href="distribuidores.php"><i class="fas fa-industry"></i> Distribuidores</a>
+                    <a class="nav-item nav-link anav" href="agentes.php"><i class="fas fa-address-card"></i> Agentes</a>
                     <a class="nav-item nav-link anav" href="#"><i class="fas fa-heart"></i> Clientes</a>
                     <a class="nav-item nav-link anav" href="#"><i class="fas fa-coins"></i> Pagos</a>
                     <a class="nav-item nav-link anav" href="#"><i class="fas fa-chart-bar"></i> Estadisticas</a>
@@ -142,10 +142,11 @@
                                 <th scope="col">Contraseña</th>
                                 <th scope="col">Imagen</th>
                                 <th scope="col">Pin</th>
+                                <th scope="col">Opciones</th>
                             </tr>
                         </thead>
                         <tbody id="UsuariosVerTable">
-                           
+
                         </tbody>
                     </table>
                 </div>

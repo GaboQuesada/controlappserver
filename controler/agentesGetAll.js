@@ -1,9 +1,17 @@
 
 
-$(document).ready(function (){
-   
+$(document).ready(function () {
+    getAll();
     $("#profile-tab").click(function () {
-   
+        getAll();
+
+    })
+
+
+})
+
+function getAll() {
+
     $.ajax({
         url: "model/agentesGetAll.php",
         type: 'POST',
@@ -33,7 +41,5 @@ $(document).ready(function (){
 
         }
     });
-})
-    
-    
-})
+
+}

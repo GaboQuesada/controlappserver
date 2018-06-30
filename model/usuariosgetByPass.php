@@ -17,11 +17,16 @@ try {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
     $respuesta['resultados'] = $user;
     $id = $user['us_id'];
+    $ce = $user['us_ce'];
     $nombre = $user['us_no']." ".$user['us_ap1']." ".$user['us_ap2'];
     $imagen = $user['us_im'];
     $_SESSION["id"] = $id;
+    $_SESSION["ce"] = $ce;
     $_SESSION["nb"] = $nombre;
     $_SESSION["img"] = $imagen;
+    $_SESSION["ma"] = 0;
+    $_SESSION["di"] = 0;
+    $_SESSION["ag"] = 0;
     print json_encode($respuesta);
 } catch (PDOException $e) {
 

@@ -27,6 +27,7 @@ if (@$_GET["cerrar"]) {
     </head>
 
     <body class="container">
+        <input type="hidden" id="idusp" name="idusp" value="<?php echo $_SESSION["id"];?>" /> 
         <br>
         <div class="row headup">
             <div class="col-sm">
@@ -47,67 +48,20 @@ if (@$_GET["cerrar"]) {
                 <p style="display: inline-block"><?php echo $_SESSION["nb"]; ?></p>
             </div>
             <div class="col-sm align-self-center">
-
+                <p id="idus"><?php echo $_SESSION["ce"]; ?></p>
             </div>
             <div class="col-sm">
-
+                <a><i class="fas fa-sign-out-alt"></i>salir&numsp;</a>|<a>&numsp;<i class="fas fa-cog"></i>configurar perfil</a>
             </div>
         </div>
         <hr>
         <p><strong>Cuentas Vinculadas:</strong></p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="row ">
-                    <div class="col-sm">
-                        <img style="display: inline-block" src="sysimg/distribuidor.png"  width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Distribuidor</p>
-                    </div>
-                    <div class="col-sm align-self-center">
-                        <img style="display: inline-block" src="img/logoyovoy.png"width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Yo voy Tecnologias</p>
-                    </div>
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-outline-dark ">Administrar</button>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row ">
-                    <div class="col-sm">
-                        <img style="display: inline-block" src="sysimg/agente.png"width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Agente de Ventas</p>
-                    </div>
-                    <div class="col-sm align-self-center">
-                        <img style="display: inline-block" src="img/logoyovoy.png"width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Yo voy Tecnologias</p>
-                    </div>
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-outline-dark">Administrar</button>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row ">
-                    <div class="col-sm">
-                        <img style="display: inline-block" src="sysimg/master.png"width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Master</p>
-                    </div>
-                    <div class="col-sm align-self-center">
-                        <img style="display: inline-block" src="img/logo.png"width="45" height="45">
-                        &numsp;
-                        <p style="display: inline-block">Deli app</p>
-                    </div>
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-outline-dark">Administrar</button>
-                    </div>
-                </div>
-            </li>
+        <ul id="listadeperfiles" class="list-group list-group-flush">
+            
+           
+          
 
         </ul>
+        <script type="text/javascript" src="controler/lobbyPerfiles.js" ></script>
     </body>
 </html>
